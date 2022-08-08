@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Managing Users App</string>
+    <string name="search_by_name_hint">Search by name</string>
+    <string name="search_by_name_initial_text" />
+    <string name="missing_results">No results for \"%1$s\" query</string>
+    <string name="status_query">Found: %1$s</string>
+    <string name="list_is_empty">List is empty</string>
+
+    <string name="content_description_close_button">close button</string>
+    <string name="content_description_picture">picture</string>
+
+    <string name="add_user_label">Adding new user:</string>
+    <string name="add_user_name_label">User name</string>
+    <string name="add_user_email_label">Email</string>
+    <string name="add_user_gender_label">Gender</string>
+    <string name="add_user_gender_init_value">Male</string>
+
+    <string name="email_required">Email address is required !</string>
+    <string name="incorrect_email_format">Incorrect email format</string>
+    <string name="user_name_length_error">User name should have from 3 to 30 characters</string>
+    <string name="gender_length_error">Gender should have from 3 to 30 characters</string>
+
+    <string name="delete_user">Are you sure you want to remove %1$s user?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+</resources>

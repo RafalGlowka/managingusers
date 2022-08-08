@@ -1,0 +1,28 @@
+query UserList {
+    users(first: 30) {
+        nodes {
+            id
+            name
+            email
+        }
+        totalCount
+    }
+}
+
+mutation CreateUser($userData : createUserInput!) {
+    createUser(input: $userData) {
+        user {
+            id
+            name
+            email
+        }
+    }
+}
+
+mutation DeleteUser($userData : deleteUserInput!) {
+    deleteUser(input : $userData) {
+        user {
+            id
+        }
+    }
+}

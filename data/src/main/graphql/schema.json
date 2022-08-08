@@ -1,0 +1,3040 @@
+{
+  "__schema": {
+    "queryType": {
+      "name": "Query"
+    },
+    "mutationType": {
+      "name": "Mutation"
+    },
+    "types": [
+      {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "description": "Represents `true` or `false` values."
+      },
+      {
+        "kind": "SCALAR",
+        "name": "ID",
+        "description": "Represents a unique identifier that is Base64 obfuscated. It is often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `\"VXNlci0xMA==\"`) or integer (such as `4`) input value will be accepted as an ID."
+      },
+      {
+        "kind": "SCALAR",
+        "name": "ISO8601DateTime",
+        "description": "An ISO 8601-encoded datetime"
+      },
+      {
+        "kind": "SCALAR",
+        "name": "Int",
+        "description": "Represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1."
+      },
+      {
+        "kind": "OBJECT",
+        "name": "Mutation",
+        "fields": [
+          {
+            "name": "createComment",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "createCommentPayload"
+            },
+            "args": [
+              {
+                "name": "input",
+                "description": "Parameters for createComment",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "INPUT_OBJECT",
+                    "name": "createCommentInput"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "createPost",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "createPostPayload"
+            },
+            "args": [
+              {
+                "name": "input",
+                "description": "Parameters for createPost",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "INPUT_OBJECT",
+                    "name": "createPostInput"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "createTodo",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "createTodoPayload"
+            },
+            "args": [
+              {
+                "name": "input",
+                "description": "Parameters for createTodo",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "INPUT_OBJECT",
+                    "name": "createTodoInput"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "createUser",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "createUserPayload"
+            },
+            "args": [
+              {
+                "name": "input",
+                "description": "Parameters for createUser",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "INPUT_OBJECT",
+                    "name": "createUserInput"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "deleteComment",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "deleteCommentPayload"
+            },
+            "args": [
+              {
+                "name": "input",
+                "description": "Parameters for deleteComment",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "INPUT_OBJECT",
+                    "name": "deleteCommentInput"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "deletePost",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "deletePostPayload"
+            },
+            "args": [
+              {
+                "name": "input",
+                "description": "Parameters for deletePost",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "INPUT_OBJECT",
+                    "name": "deletePostInput"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "deleteTodo",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "deleteTodoPayload"
+            },
+            "args": [
+              {
+                "name": "input",
+                "description": "Parameters for deleteTodo",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "INPUT_OBJECT",
+                    "name": "deleteTodoInput"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "deleteUser",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "deleteUserPayload"
+            },
+            "args": [
+              {
+                "name": "input",
+                "description": "Parameters for deleteUser",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "INPUT_OBJECT",
+                    "name": "deleteUserInput"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "updateComment",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "updateCommentPayload"
+            },
+            "args": [
+              {
+                "name": "input",
+                "description": "Parameters for updateComment",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "INPUT_OBJECT",
+                    "name": "updateCommentInput"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "updatePost",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "updatePostPayload"
+            },
+            "args": [
+              {
+                "name": "input",
+                "description": "Parameters for updatePost",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "INPUT_OBJECT",
+                    "name": "updatePostInput"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "updateTodo",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "updateTodoPayload"
+            },
+            "args": [
+              {
+                "name": "input",
+                "description": "Parameters for updateTodo",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "INPUT_OBJECT",
+                    "name": "updateTodoInput"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "updateUser",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "updateUserPayload"
+            },
+            "args": [
+              {
+                "name": "input",
+                "description": "Parameters for updateUser",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "INPUT_OBJECT",
+                    "name": "updateUserInput"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "PageInfo",
+        "description": "Information about pagination in a connection.",
+        "fields": [
+          {
+            "name": "endCursor",
+            "description": "When paginating forwards, the cursor to continue.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            },
+            "args": []
+          },
+          {
+            "name": "hasNextPage",
+            "description": "When paginating forwards, are there more items?",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Boolean"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "hasPreviousPage",
+            "description": "When paginating backwards, are there more items?",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Boolean"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "startCursor",
+            "description": "When paginating backwards, the cursor to continue.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            },
+            "args": []
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "Query",
+        "fields": [
+          {
+            "name": "comment",
+            "description": "Find a comment by ID",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "comment"
+            },
+            "args": [
+              {
+                "name": "id",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "ID"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "comments",
+            "description": "List of comments",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "commentConnection"
+              }
+            },
+            "args": [
+              {
+                "name": "after",
+                "description": "Returns the elements in the list that come after the specified cursor.",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String"
+                }
+              },
+              {
+                "name": "before",
+                "description": "Returns the elements in the list that come before the specified cursor.",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String"
+                }
+              },
+              {
+                "name": "first",
+                "description": "Returns the first _n_ elements from the list.",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int"
+                }
+              },
+              {
+                "name": "last",
+                "description": "Returns the last _n_ elements from the list.",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int"
+                }
+              }
+            ]
+          },
+          {
+            "name": "post",
+            "description": "Find a post by ID",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "post"
+            },
+            "args": [
+              {
+                "name": "id",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "ID"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "posts",
+            "description": "List of posts",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "postConnection"
+              }
+            },
+            "args": [
+              {
+                "name": "after",
+                "description": "Returns the elements in the list that come after the specified cursor.",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String"
+                }
+              },
+              {
+                "name": "before",
+                "description": "Returns the elements in the list that come before the specified cursor.",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String"
+                }
+              },
+              {
+                "name": "first",
+                "description": "Returns the first _n_ elements from the list.",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int"
+                }
+              },
+              {
+                "name": "last",
+                "description": "Returns the last _n_ elements from the list.",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int"
+                }
+              }
+            ]
+          },
+          {
+            "name": "todo",
+            "description": "Find a todo by ID",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "todo"
+            },
+            "args": [
+              {
+                "name": "id",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "ID"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "todos",
+            "description": "List of todos",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "todoConnection"
+              }
+            },
+            "args": [
+              {
+                "name": "after",
+                "description": "Returns the elements in the list that come after the specified cursor.",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String"
+                }
+              },
+              {
+                "name": "before",
+                "description": "Returns the elements in the list that come before the specified cursor.",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String"
+                }
+              },
+              {
+                "name": "first",
+                "description": "Returns the first _n_ elements from the list.",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int"
+                }
+              },
+              {
+                "name": "last",
+                "description": "Returns the last _n_ elements from the list.",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int"
+                }
+              }
+            ]
+          },
+          {
+            "name": "user",
+            "description": "Find a user by ID",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "user"
+            },
+            "args": [
+              {
+                "name": "id",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "ID"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "users",
+            "description": "List of users",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "userConnection"
+              }
+            },
+            "args": [
+              {
+                "name": "after",
+                "description": "Returns the elements in the list that come after the specified cursor.",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String"
+                }
+              },
+              {
+                "name": "before",
+                "description": "Returns the elements in the list that come before the specified cursor.",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String"
+                }
+              },
+              {
+                "name": "first",
+                "description": "Returns the first _n_ elements from the list.",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int"
+                }
+              },
+              {
+                "name": "last",
+                "description": "Returns the last _n_ elements from the list.",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "SCALAR",
+        "name": "String",
+        "description": "Represents textual data as UTF-8 character sequences. This type is most often used by GraphQL to represent free-form human-readable text."
+      },
+      {
+        "kind": "OBJECT",
+        "name": "__Directive",
+        "description": "A Directive provides a way to describe alternate runtime execution and type validation behavior in a GraphQL document.\n\nIn some cases, you need to provide options to alter GraphQL's execution behavior in ways field arguments will not suffice, such as conditionally including or skipping a field. Directives provide this by describing additional information to the executor.",
+        "fields": [
+          {
+            "name": "args",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "LIST",
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "__InputValue"
+                  }
+                }
+              }
+            },
+            "args": [
+              {
+                "name": "includeDeprecated",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Boolean"
+                },
+                "defaultValue": "false"
+              }
+            ]
+          },
+          {
+            "name": "description",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            },
+            "args": []
+          },
+          {
+            "name": "isRepeatable",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "Boolean"
+            },
+            "args": []
+          },
+          {
+            "name": "locations",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "LIST",
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "ENUM",
+                    "name": "__DirectiveLocation"
+                  }
+                }
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "name",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "onField",
+            "isDeprecated": true,
+            "deprecationReason": "Use `locations`.",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Boolean"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "onFragment",
+            "isDeprecated": true,
+            "deprecationReason": "Use `locations`.",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Boolean"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "onOperation",
+            "isDeprecated": true,
+            "deprecationReason": "Use `locations`.",
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Boolean"
+              }
+            },
+            "args": []
+          }
+        ]
+      },
+      {
+        "kind": "ENUM",
+        "name": "__DirectiveLocation",
+        "description": "A Directive can be adjacent to many parts of the GraphQL language, a __DirectiveLocation describes one such possible adjacencies.",
+        "enumValues": [
+          {
+            "name": "QUERY",
+            "description": "Location adjacent to a query operation.",
+            "isDeprecated": false
+          },
+          {
+            "name": "MUTATION",
+            "description": "Location adjacent to a mutation operation.",
+            "isDeprecated": false
+          },
+          {
+            "name": "SUBSCRIPTION",
+            "description": "Location adjacent to a subscription operation.",
+            "isDeprecated": false
+          },
+          {
+            "name": "FIELD",
+            "description": "Location adjacent to a field.",
+            "isDeprecated": false
+          },
+          {
+            "name": "FRAGMENT_DEFINITION",
+            "description": "Location adjacent to a fragment definition.",
+            "isDeprecated": false
+          },
+          {
+            "name": "FRAGMENT_SPREAD",
+            "description": "Location adjacent to a fragment spread.",
+            "isDeprecated": false
+          },
+          {
+            "name": "INLINE_FRAGMENT",
+            "description": "Location adjacent to an inline fragment.",
+            "isDeprecated": false
+          },
+          {
+            "name": "SCHEMA",
+            "description": "Location adjacent to a schema definition.",
+            "isDeprecated": false
+          },
+          {
+            "name": "SCALAR",
+            "description": "Location adjacent to a scalar definition.",
+            "isDeprecated": false
+          },
+          {
+            "name": "OBJECT",
+            "description": "Location adjacent to an object type definition.",
+            "isDeprecated": false
+          },
+          {
+            "name": "FIELD_DEFINITION",
+            "description": "Location adjacent to a field definition.",
+            "isDeprecated": false
+          },
+          {
+            "name": "ARGUMENT_DEFINITION",
+            "description": "Location adjacent to an argument definition.",
+            "isDeprecated": false
+          },
+          {
+            "name": "INTERFACE",
+            "description": "Location adjacent to an interface definition.",
+            "isDeprecated": false
+          },
+          {
+            "name": "UNION",
+            "description": "Location adjacent to a union definition.",
+            "isDeprecated": false
+          },
+          {
+            "name": "ENUM",
+            "description": "Location adjacent to an enum definition.",
+            "isDeprecated": false
+          },
+          {
+            "name": "ENUM_VALUE",
+            "description": "Location adjacent to an enum value definition.",
+            "isDeprecated": false
+          },
+          {
+            "name": "INPUT_OBJECT",
+            "description": "Location adjacent to an input object type definition.",
+            "isDeprecated": false
+          },
+          {
+            "name": "INPUT_FIELD_DEFINITION",
+            "description": "Location adjacent to an input object field definition.",
+            "isDeprecated": false
+          },
+          {
+            "name": "VARIABLE_DEFINITION",
+            "description": "Location adjacent to a variable definition.",
+            "isDeprecated": false
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "__EnumValue",
+        "description": "One possible value for a given Enum. Enum values are unique values, not a placeholder for a string or numeric value. However an Enum value is returned in a JSON response as a string.",
+        "fields": [
+          {
+            "name": "deprecationReason",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            },
+            "args": []
+          },
+          {
+            "name": "description",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            },
+            "args": []
+          },
+          {
+            "name": "isDeprecated",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Boolean"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "name",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String"
+              }
+            },
+            "args": []
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "__Field",
+        "description": "Object and Interface types are described by a list of Fields, each of which has a name, potentially a list of arguments, and a return type.",
+        "fields": [
+          {
+            "name": "args",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "LIST",
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "__InputValue"
+                  }
+                }
+              }
+            },
+            "args": [
+              {
+                "name": "includeDeprecated",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Boolean"
+                },
+                "defaultValue": "false"
+              }
+            ]
+          },
+          {
+            "name": "deprecationReason",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            },
+            "args": []
+          },
+          {
+            "name": "description",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            },
+            "args": []
+          },
+          {
+            "name": "isDeprecated",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Boolean"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "name",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "type",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "__Type"
+              }
+            },
+            "args": []
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "__InputValue",
+        "description": "Arguments provided to Fields or Directives and the input fields of an InputObject are represented as Input Values which describe their type and optionally a default value.",
+        "fields": [
+          {
+            "name": "defaultValue",
+            "description": "A GraphQL-formatted string representing the default value for this input value.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            },
+            "args": []
+          },
+          {
+            "name": "deprecationReason",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            },
+            "args": []
+          },
+          {
+            "name": "description",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            },
+            "args": []
+          },
+          {
+            "name": "isDeprecated",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Boolean"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "name",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "type",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "__Type"
+              }
+            },
+            "args": []
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "__Schema",
+        "description": "A GraphQL Schema defines the capabilities of a GraphQL server. It exposes all available types and directives on the server, as well as the entry points for query, mutation, and subscription operations.",
+        "fields": [
+          {
+            "name": "description",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            },
+            "args": []
+          },
+          {
+            "name": "directives",
+            "description": "A list of all directives supported by this server.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "LIST",
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "__Directive"
+                  }
+                }
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "mutationType",
+            "description": "If this server supports mutation, the type that mutation operations will be rooted at.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "__Type"
+            },
+            "args": []
+          },
+          {
+            "name": "queryType",
+            "description": "The type that query operations will be rooted at.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "__Type"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "subscriptionType",
+            "description": "If this server support subscription, the type that subscription operations will be rooted at.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "__Type"
+            },
+            "args": []
+          },
+          {
+            "name": "types",
+            "description": "A list of all types supported by this server.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "LIST",
+                "ofType": {
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "__Type"
+                  }
+                }
+              }
+            },
+            "args": []
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "__Type",
+        "description": "The fundamental unit of any GraphQL Schema is the type. There are many kinds of types in GraphQL as represented by the `__TypeKind` enum.\n\nDepending on the kind of a type, certain fields describe information about that type. Scalar types provide no information beyond a name and description, while Enum types provide their values. Object and Interface types provide the fields they describe. Abstract types, Union and Interface, provide the Object types possible at runtime. List and NonNull types compose other types.",
+        "fields": [
+          {
+            "name": "description",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            },
+            "args": []
+          },
+          {
+            "name": "enumValues",
+            "isDeprecated": false,
+            "type": {
+              "kind": "LIST",
+              "ofType": {
+                "kind": "NON_NULL",
+                "ofType": {
+                  "kind": "OBJECT",
+                  "name": "__EnumValue"
+                }
+              }
+            },
+            "args": [
+              {
+                "name": "includeDeprecated",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Boolean"
+                },
+                "defaultValue": "false"
+              }
+            ]
+          },
+          {
+            "name": "fields",
+            "isDeprecated": false,
+            "type": {
+              "kind": "LIST",
+              "ofType": {
+                "kind": "NON_NULL",
+                "ofType": {
+                  "kind": "OBJECT",
+                  "name": "__Field"
+                }
+              }
+            },
+            "args": [
+              {
+                "name": "includeDeprecated",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Boolean"
+                },
+                "defaultValue": "false"
+              }
+            ]
+          },
+          {
+            "name": "inputFields",
+            "isDeprecated": false,
+            "type": {
+              "kind": "LIST",
+              "ofType": {
+                "kind": "NON_NULL",
+                "ofType": {
+                  "kind": "OBJECT",
+                  "name": "__InputValue"
+                }
+              }
+            },
+            "args": [
+              {
+                "name": "includeDeprecated",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Boolean"
+                },
+                "defaultValue": "false"
+              }
+            ]
+          },
+          {
+            "name": "interfaces",
+            "isDeprecated": false,
+            "type": {
+              "kind": "LIST",
+              "ofType": {
+                "kind": "NON_NULL",
+                "ofType": {
+                  "kind": "OBJECT",
+                  "name": "__Type"
+                }
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "kind",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "ENUM",
+                "name": "__TypeKind"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "name",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            },
+            "args": []
+          },
+          {
+            "name": "ofType",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "__Type"
+            },
+            "args": []
+          },
+          {
+            "name": "possibleTypes",
+            "isDeprecated": false,
+            "type": {
+              "kind": "LIST",
+              "ofType": {
+                "kind": "NON_NULL",
+                "ofType": {
+                  "kind": "OBJECT",
+                  "name": "__Type"
+                }
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "specifiedByURL",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            },
+            "args": []
+          }
+        ]
+      },
+      {
+        "kind": "ENUM",
+        "name": "__TypeKind",
+        "description": "An enum describing what kind of type a given `__Type` is.",
+        "enumValues": [
+          {
+            "name": "SCALAR",
+            "description": "Indicates this type is a scalar.",
+            "isDeprecated": false
+          },
+          {
+            "name": "OBJECT",
+            "description": "Indicates this type is an object. `fields` and `interfaces` are valid fields.",
+            "isDeprecated": false
+          },
+          {
+            "name": "INTERFACE",
+            "description": "Indicates this type is an interface. `fields` and `possibleTypes` are valid fields.",
+            "isDeprecated": false
+          },
+          {
+            "name": "UNION",
+            "description": "Indicates this type is a union. `possibleTypes` is a valid field.",
+            "isDeprecated": false
+          },
+          {
+            "name": "ENUM",
+            "description": "Indicates this type is an enum. `enumValues` is a valid field.",
+            "isDeprecated": false
+          },
+          {
+            "name": "INPUT_OBJECT",
+            "description": "Indicates this type is an input object. `inputFields` is a valid field.",
+            "isDeprecated": false
+          },
+          {
+            "name": "LIST",
+            "description": "Indicates this type is a list. `ofType` is a valid field.",
+            "isDeprecated": false
+          },
+          {
+            "name": "NON_NULL",
+            "description": "Indicates this type is a non-null. `ofType` is a valid field.",
+            "isDeprecated": false
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "comment",
+        "fields": [
+          {
+            "name": "body",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            },
+            "args": []
+          },
+          {
+            "name": "email",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            },
+            "args": []
+          },
+          {
+            "name": "id",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Int"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "name",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            },
+            "args": []
+          },
+          {
+            "name": "post",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "post"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "postId",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Int"
+              }
+            },
+            "args": []
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "commentConnection",
+        "description": "The connection type for comment.",
+        "fields": [
+          {
+            "name": "edges",
+            "description": "A list of edges.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "LIST",
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "commentEdge"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "nodes",
+            "description": "A list of nodes.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "LIST",
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "comment"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "pageInfo",
+            "description": "Information to aid in pagination.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "PageInfo"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "totalCount",
+            "description": "Total count of items",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Int"
+              }
+            },
+            "args": []
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "commentEdge",
+        "description": "An edge in a connection.",
+        "fields": [
+          {
+            "name": "cursor",
+            "description": "A cursor for use in pagination.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "node",
+            "description": "The item at the end of the edge.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "comment"
+            },
+            "args": []
+          }
+        ]
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "createCommentInput",
+        "description": "Autogenerated input type of createComment",
+        "inputFields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            }
+          },
+          {
+            "name": "postId",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Int"
+              }
+            }
+          },
+          {
+            "name": "name",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String"
+              }
+            }
+          },
+          {
+            "name": "email",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String"
+              }
+            }
+          },
+          {
+            "name": "body",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "createCommentPayload",
+        "description": "Autogenerated return type of createComment",
+        "fields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            },
+            "args": []
+          },
+          {
+            "name": "comment",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "comment"
+            },
+            "args": []
+          }
+        ]
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "createPostInput",
+        "description": "Autogenerated input type of createPost",
+        "inputFields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            }
+          },
+          {
+            "name": "userId",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Int"
+              }
+            }
+          },
+          {
+            "name": "title",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String"
+              }
+            }
+          },
+          {
+            "name": "body",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "createPostPayload",
+        "description": "Autogenerated return type of createPost",
+        "fields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            },
+            "args": []
+          },
+          {
+            "name": "post",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "post"
+            },
+            "args": []
+          }
+        ]
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "createTodoInput",
+        "description": "Autogenerated input type of createTodo",
+        "inputFields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            }
+          },
+          {
+            "name": "userId",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Int"
+              }
+            }
+          },
+          {
+            "name": "title",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String"
+              }
+            }
+          },
+          {
+            "name": "dueOn",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "ISO8601DateTime"
+              }
+            }
+          },
+          {
+            "name": "status",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "createTodoPayload",
+        "description": "Autogenerated return type of createTodo",
+        "fields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            },
+            "args": []
+          },
+          {
+            "name": "todo",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "todo"
+            },
+            "args": []
+          }
+        ]
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "createUserInput",
+        "description": "Autogenerated input type of createUser",
+        "inputFields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            }
+          },
+          {
+            "name": "name",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String"
+              }
+            }
+          },
+          {
+            "name": "email",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String"
+              }
+            }
+          },
+          {
+            "name": "gender",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String"
+              }
+            }
+          },
+          {
+            "name": "status",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "createUserPayload",
+        "description": "Autogenerated return type of createUser",
+        "fields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            },
+            "args": []
+          },
+          {
+            "name": "user",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "user"
+            },
+            "args": []
+          }
+        ]
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "deleteCommentInput",
+        "description": "Autogenerated input type of deleteComment",
+        "inputFields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            }
+          },
+          {
+            "name": "id",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Int"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "deleteCommentPayload",
+        "description": "Autogenerated return type of deleteComment",
+        "fields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            },
+            "args": []
+          },
+          {
+            "name": "comment",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "comment"
+            },
+            "args": []
+          }
+        ]
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "deletePostInput",
+        "description": "Autogenerated input type of deletePost",
+        "inputFields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            }
+          },
+          {
+            "name": "id",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Int"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "deletePostPayload",
+        "description": "Autogenerated return type of deletePost",
+        "fields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            },
+            "args": []
+          },
+          {
+            "name": "post",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "post"
+            },
+            "args": []
+          }
+        ]
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "deleteTodoInput",
+        "description": "Autogenerated input type of deleteTodo",
+        "inputFields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            }
+          },
+          {
+            "name": "id",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Int"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "deleteTodoPayload",
+        "description": "Autogenerated return type of deleteTodo",
+        "fields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            },
+            "args": []
+          },
+          {
+            "name": "todo",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "todo"
+            },
+            "args": []
+          }
+        ]
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "deleteUserInput",
+        "description": "Autogenerated input type of deleteUser",
+        "inputFields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            }
+          },
+          {
+            "name": "id",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Int"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "deleteUserPayload",
+        "description": "Autogenerated return type of deleteUser",
+        "fields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            },
+            "args": []
+          },
+          {
+            "name": "user",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "user"
+            },
+            "args": []
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "post",
+        "fields": [
+          {
+            "name": "body",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "comments",
+            "description": "List of comments",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "commentConnection"
+              }
+            },
+            "args": [
+              {
+                "name": "after",
+                "description": "Returns the elements in the list that come after the specified cursor.",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String"
+                }
+              },
+              {
+                "name": "before",
+                "description": "Returns the elements in the list that come before the specified cursor.",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String"
+                }
+              },
+              {
+                "name": "first",
+                "description": "Returns the first _n_ elements from the list.",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int"
+                }
+              },
+              {
+                "name": "last",
+                "description": "Returns the last _n_ elements from the list.",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int"
+                }
+              }
+            ]
+          },
+          {
+            "name": "id",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Int"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "title",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "user",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "user"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "userId",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Int"
+              }
+            },
+            "args": []
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "postConnection",
+        "description": "The connection type for post.",
+        "fields": [
+          {
+            "name": "edges",
+            "description": "A list of edges.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "LIST",
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "postEdge"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "nodes",
+            "description": "A list of nodes.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "LIST",
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "post"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "pageInfo",
+            "description": "Information to aid in pagination.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "PageInfo"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "totalCount",
+            "description": "Total count of items",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Int"
+              }
+            },
+            "args": []
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "postEdge",
+        "description": "An edge in a connection.",
+        "fields": [
+          {
+            "name": "cursor",
+            "description": "A cursor for use in pagination.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "node",
+            "description": "The item at the end of the edge.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "post"
+            },
+            "args": []
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "todo",
+        "fields": [
+          {
+            "name": "dueOn",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "ISO8601DateTime"
+            },
+            "args": []
+          },
+          {
+            "name": "id",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Int"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "status",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "title",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "user",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "user"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "userId",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Int"
+              }
+            },
+            "args": []
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "todoConnection",
+        "description": "The connection type for todo.",
+        "fields": [
+          {
+            "name": "edges",
+            "description": "A list of edges.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "LIST",
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "todoEdge"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "nodes",
+            "description": "A list of nodes.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "LIST",
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "todo"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "pageInfo",
+            "description": "Information to aid in pagination.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "PageInfo"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "totalCount",
+            "description": "Total count of items",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Int"
+              }
+            },
+            "args": []
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "todoEdge",
+        "description": "An edge in a connection.",
+        "fields": [
+          {
+            "name": "cursor",
+            "description": "A cursor for use in pagination.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "node",
+            "description": "The item at the end of the edge.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "todo"
+            },
+            "args": []
+          }
+        ]
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "updateCommentInput",
+        "description": "Autogenerated input type of updateComment",
+        "inputFields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            }
+          },
+          {
+            "name": "id",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Int"
+              }
+            }
+          },
+          {
+            "name": "postId",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "Int"
+            }
+          },
+          {
+            "name": "name",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            }
+          },
+          {
+            "name": "email",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            }
+          },
+          {
+            "name": "body",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "updateCommentPayload",
+        "description": "Autogenerated return type of updateComment",
+        "fields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            },
+            "args": []
+          },
+          {
+            "name": "comment",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "comment"
+            },
+            "args": []
+          }
+        ]
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "updatePostInput",
+        "description": "Autogenerated input type of updatePost",
+        "inputFields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            }
+          },
+          {
+            "name": "id",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Int"
+              }
+            }
+          },
+          {
+            "name": "userId",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "Int"
+            }
+          },
+          {
+            "name": "title",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            }
+          },
+          {
+            "name": "body",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "updatePostPayload",
+        "description": "Autogenerated return type of updatePost",
+        "fields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            },
+            "args": []
+          },
+          {
+            "name": "post",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "post"
+            },
+            "args": []
+          }
+        ]
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "updateTodoInput",
+        "description": "Autogenerated input type of updateTodo",
+        "inputFields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            }
+          },
+          {
+            "name": "id",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Int"
+              }
+            }
+          },
+          {
+            "name": "userId",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "Int"
+            }
+          },
+          {
+            "name": "title",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            }
+          },
+          {
+            "name": "dueOn",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "ISO8601DateTime"
+            }
+          },
+          {
+            "name": "status",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "updateTodoPayload",
+        "description": "Autogenerated return type of updateTodo",
+        "fields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            },
+            "args": []
+          },
+          {
+            "name": "todo",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "todo"
+            },
+            "args": []
+          }
+        ]
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "updateUserInput",
+        "description": "Autogenerated input type of updateUser",
+        "inputFields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            }
+          },
+          {
+            "name": "id",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Int"
+              }
+            }
+          },
+          {
+            "name": "name",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            }
+          },
+          {
+            "name": "email",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            }
+          },
+          {
+            "name": "gender",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            }
+          },
+          {
+            "name": "status",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "updateUserPayload",
+        "description": "Autogenerated return type of updateUser",
+        "fields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String"
+            },
+            "args": []
+          },
+          {
+            "name": "user",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "user"
+            },
+            "args": []
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "user",
+        "fields": [
+          {
+            "name": "email",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "gender",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "id",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Int"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "name",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "posts",
+            "description": "List of posts",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "postConnection"
+              }
+            },
+            "args": [
+              {
+                "name": "after",
+                "description": "Returns the elements in the list that come after the specified cursor.",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String"
+                }
+              },
+              {
+                "name": "before",
+                "description": "Returns the elements in the list that come before the specified cursor.",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String"
+                }
+              },
+              {
+                "name": "first",
+                "description": "Returns the first _n_ elements from the list.",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int"
+                }
+              },
+              {
+                "name": "last",
+                "description": "Returns the last _n_ elements from the list.",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int"
+                }
+              }
+            ]
+          },
+          {
+            "name": "status",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "todos",
+            "description": "List of todos",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "todoConnection"
+              }
+            },
+            "args": [
+              {
+                "name": "after",
+                "description": "Returns the elements in the list that come after the specified cursor.",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String"
+                }
+              },
+              {
+                "name": "before",
+                "description": "Returns the elements in the list that come before the specified cursor.",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String"
+                }
+              },
+              {
+                "name": "first",
+                "description": "Returns the first _n_ elements from the list.",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int"
+                }
+              },
+              {
+                "name": "last",
+                "description": "Returns the last _n_ elements from the list.",
+                "isDeprecated": false,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "userConnection",
+        "description": "The connection type for user.",
+        "fields": [
+          {
+            "name": "edges",
+            "description": "A list of edges.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "LIST",
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "userEdge"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "nodes",
+            "description": "A list of nodes.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "LIST",
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "user"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "pageInfo",
+            "description": "Information to aid in pagination.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "PageInfo"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "totalCount",
+            "description": "Total count of items",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "Int"
+              }
+            },
+            "args": []
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "userEdge",
+        "description": "An edge in a connection.",
+        "fields": [
+          {
+            "name": "cursor",
+            "description": "A cursor for use in pagination.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "NON_NULL",
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String"
+              }
+            },
+            "args": []
+          },
+          {
+            "name": "node",
+            "description": "The item at the end of the edge.",
+            "isDeprecated": false,
+            "type": {
+              "kind": "OBJECT",
+              "name": "user"
+            },
+            "args": []
+          }
+        ]
+      }
+    ]
+  }
+}
